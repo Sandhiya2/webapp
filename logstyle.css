@@ -1,0 +1,161 @@
+.box{
+  max-width:600px;
+  margin: -250px auto 120px;
+  position: relative;
+  overflow: hidden;
+  height: 380px;
+  padding: 21px 33px;
+  margin-top: 10%;
+  border:5px solid #198CF5;
+}
+.login h1{
+  color:#030F1A;
+  margin-left:13%;
+  margin-top:8%;
+}
+.login form{
+  margin-left: 6%;
+  float: left;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 20px 0;
+  width: 200px;
+}
+.txt_field input{
+  width: 80%;
+  padding: 0 8px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 20px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #198CF5;;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #198CF5;;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.login input[type=submit]{
+  font-size: 16px;
+  background:#198CF5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 42%;
+  border-radius: 5px;
+  padding: 5px 0;
+  outline:none;
+  }
+  .signup{
+    float: right;
+  }
+  .signup input[type=submit]{
+    font-size: 16px;
+    background:#198CF5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 42%;
+    border-radius: 50%;
+    padding: 5px 0;
+    outline:none;
+    }
+    .sign h1{
+      text-align: center;
+      font-size:40px;
+      margin-top: 10%;
+    }
+    .box2{
+      max-width:600px;
+      margin: -250px auto 120px;
+      position: relative;
+      overflow: hidden;
+      height: 380px;
+      padding: 21px 33px;
+      margin-top: 2%;
+      border:5px solid #198CF5;
+    }
+    .create form{
+      margin-left: 10%;
+    }
+    form .txt{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 20px 0;
+      width: 400px;
+    }
+    .txt input{
+      width: 80%;
+      padding: 0 8px;
+      height: 40px;
+      font-size: 18px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 20px;
+      pointer-events: none;
+      transition: .5s;
+    }
+    .txt span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #198CF5;;
+      transition: .5s;
+    }
+    .txt input:focus ~ label,
+    .txt input:valid ~ label{
+      top: -5px;
+      color: #198CF5;;
+    }
+    .txt input:focus ~ span::before,
+    .txt input:valid ~ span::before{
+      width: 100%;
+    }
+    .create input[type=submit]{
+      font-size: 16px;
+      background:#198CF5;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      width: 42%;
+      border-radius: 5px;
+      padding: 5px 0;
+      outline:none;
+      }

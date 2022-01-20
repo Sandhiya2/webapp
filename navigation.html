@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Filter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<body bgcolor="#CA7BC1">
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+  <h5 class="w3-bar-item">EVENTS</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'paper')">Paper Presentation</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'project')">Poster Presentation</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'quiz')">Quiz</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openFeature(event, 'debug')">Debugging</button>
+  
+</div>
+
+<div style="margin-left:500px">
+  <div class="w3-padding"><h3><strong>REGISTARTION IS NOW OPEN </strong></h3></div>
+  <div id="paper" class="paper" style="display:none">
+    <h3><u>PAPER PRESENTATION</u></h3>
+    <img src="paper.jpg" width="400" height="400" alt="paper">
+    <h4><b>Event description and rules:</b></h4></b>
+    <ol>
+      <li>Two participants allowed </li><br>
+      <li>Participants can talk about any technologies using power points within the given time</li><br>
+      <li>Time allotted per team is 10 to 15 minutes for presentation</li><br>
+      <li>Juries decision is final</li><br>
+      <button><a href="register.html">Register</a></button>
+    </ol>
+  </div>
+
+  <div id="project" class="poster" style="display:none">
+    <h3><u>POSTER PRESENTATION</u></h3>
+    <img src="poster.jpg" width="400" height="400" alt="poster">
+    <h4><b>Event description and rules:</b></h4></b>
+    <ol>
+      <li>Only one individual participant </li><br>
+      <li>Topic will be given at the alloted time</li><br>
+      <li>Participant should finish the poster within that time</li><br>
+      <li>Time allotted per individual is 45 minutes for poster making</li><br>
+      <li>Juries decision is final</li><br>
+      <button><a href="register.html">Register</a></button>
+    </ol>
+  </div>
+
+  <div id="quiz" class="quiz" style="display:none">
+    <h3><u>QUIZ</u></h3>
+    <img src="quiz.jpg" width="400" height="400" alt="quiz">
+    <h4><b>Event description and rules:</b></h4></b>
+    <ol>
+      <li>A team can consists maximum of 2 members</li><br>
+      <li>Programmimg and theory related questions will be asked</li><br>
+      <li>Time will be given for each question</li><br>
+      <button><a href="register.html">Register</a></button>
+    </ol>
+  </div>
+
+  <div id="debug" class="debug" style="display:none">
+    <h3><u>DEBUGGING</u></h3>
+    <img src="debug.jpg"  width="400" height="400" alt="debug">
+    <h4><b>Event description and rules:</b></h4></b>
+    <ol>
+      <li>Only one individual participant </li><br>
+      <li>Participants should clear the errors within the specified time</li><br>
+      <li>Time will be given for each question</li><br>
+      <button><a href="register.html">Register</a></button>
+    </ol>
+  </div>
+  
+  
+</div>
+
+<script>
+function openFeature(evt, featureName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("feature");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(featureName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>
